@@ -1,0 +1,485 @@
+
+DEV@Dev MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{3aa29e1e-b204-11ef-9290-00090faa0001}.TM.blf
+ NTUSER.DAT{3aa29e1e-b204-11ef-9290-00090faa0001}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{3aa29e1e-b204-11ef-9290-00090faa0001}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ eclipse-workspace/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+DEV@Dev MINGW64 ~
+$ cd desktop\
+> ls
+bash: cd: desktopls: No such file or directory
+
+DEV@Dev MINGW64 ~
+$ cd desktop/
+
+DEV@Dev MINGW64 ~/desktop
+$ ls
+ Notepad++.lnk*   desktop.ini  'eclipse - Java.lnk'*
+
+DEV@Dev MINGW64 ~/desktop
+$ pwd
+/c/Users/DEV/desktop
+
+DEV@Dev MINGW64 ~/desktop
+$ ls -a
+ ./   ../   Notepad++.lnk*   desktop.ini  'eclipse - Java.lnk'*
+
+DEV@Dev MINGW64 ~/desktop
+$ cd ..
+
+DEV@Dev MINGW64 ~
+$ pwd
+/c/Users/DEV
+
+DEV@Dev MINGW64 ~
+$ ls
+ AppData/                                                                                       NetHood@
+'Application Data'@                                                                             OneDrive/
+ Contacts/                                                                                      Pictures/
+ Cookies@                                                                                       PrintHood@
+ Desktop/                                                                                       Recent@
+ Documents/                                                                                    'Saved Games'/
+ Downloads/                                                                                     Searches/
+ Favorites/                                                                                     SendTo@
+ Links/                                                                                        'Start Menu'@
+'Local Settings'@                                                                               Templates@
+ Music/                                                                                         Videos/
+'My Documents'@                                                                                 eclipse-workspace/
+ NTUSER.DAT                                                                                     ntuser.dat.LOG1
+ NTUSER.DAT{3aa29e1e-b204-11ef-9290-00090faa0001}.TM.blf                                        ntuser.dat.LOG2
+ NTUSER.DAT{3aa29e1e-b204-11ef-9290-00090faa0001}.TMContainer00000000000000000001.regtrans-ms   ntuser.ini
+ NTUSER.DAT{3aa29e1e-b204-11ef-9290-00090faa0001}.TMContainer00000000000000000002.regtrans-ms
+
+DEV@Dev MINGW64 ~
+$ cd desktop/
+
+DEV@Dev MINGW64 ~/desktop
+$ mkdir Guit_2025
+
+DEV@Dev MINGW64 ~/desktop
+$ cd Guit_2025
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025
+$ ls
+comandos_bash.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025
+$ cat comandos_bash.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025
+$ cat comandos_bash.txt
+ls -> lista arquivos
+cd -> move entre diretórios
+pwd -> mostra diretório de trabalho
+DEV@Dev MINGW64 ~/desktop/Guit_2025
+$ git init .
+Initialized empty Git repository in C:/Users/DEV/Desktop/Guit_2025/.git/
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ ls
+comandos_bash.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ ls -a
+./  ../  .git/  comandos_bash.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        comandos_bash.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git add comandos_bash.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   comandos_bash.txt
+
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git commit -m "comandos bash"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'DEV@Dev.(none)')
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git config --global user.email "renome@live.com"^C
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ ^C
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git config --global user.email "renome@live.com"
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git config --global user.name "007Will"
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git config --global user.email
+renome@live.com
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git config --global user.name
+007Will
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   comandos_bash.txt
+
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git commit -m "comandos bash"
+[main (root-commit) af3213c] comandos bash
+ 1 file changed, 3 insertions(+)
+ create mode 100644 comandos_bash.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ ls -a
+./  ../  .git/  comandos_bash.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ nano comandos_git.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   comandos_bash.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        comandos_git.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git add comandos_bash.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   comandos_bash.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        comandos_git.txt
+
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git add comandos_git.txt
+warning: in the working copy of 'comandos_git.txt', LF will be replaced by CRLF the next time Git touches it
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   comandos_bash.txt
+        new file:   comandos_git.txt
+
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git commit -m "Novos comandos bash e primeiros comandos git"
+[main 708c01a] Novos comandos bash e primeiros comandos git
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+ create mode 100644 comandos_git.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git logs
+git: 'logs' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git log
+commit 708c01aedb41fe741e558bf6a422d5634a4abbb9 (HEAD -> main)
+Author: 007Will <renome@live.com>
+Date:   Sat Feb 22 23:41:31 2025 -0300
+
+    Novos comandos bash e primeiros comandos git
+
+commit af3213c4ddc06578a96b1d8d12e8b8cc0a96358b
+Author: 007Will <renome@live.com>
+Date:   Sat Feb 22 23:14:01 2025 -0300
+
+    comandos bash
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   comandos_git.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   comandos_bash.txt
+        modified:   comandos_git.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git add .
+warning: in the working copy of 'comandos_git.txt', LF will be replaced by CRLF the next time Git touches it
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git commit -m "novos comandos em git e bash"
+[main c754fcd] novos comandos em git e bash
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git log
+commit c754fcd8f899870956427e051e11894e862b1031 (HEAD -> main)
+Author: 007Will <renome@live.com>
+Date:   Sat Feb 22 23:54:46 2025 -0300
+
+    novos comandos em git e bash
+
+commit 708c01aedb41fe741e558bf6a422d5634a4abbb9
+Author: 007Will <renome@live.com>
+Date:   Sat Feb 22 23:41:31 2025 -0300
+
+    Novos comandos bash e primeiros comandos git
+
+commit af3213c4ddc06578a96b1d8d12e8b8cc0a96358b
+Author: 007Will <renome@live.com>
+Date:   Sat Feb 22 23:14:01 2025 -0300
+
+    comandos bash
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        anotado.txt
+        fluxo de trabalho.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git add "fluxo de trabalho"
+fatal: pathspec 'fluxo de trabalho' did not match any files
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git add "fluxo de trabalho.txt"
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git add "anotado.txt"
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ status
+bash: status: command not found
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   anotado.txt
+        new file:   fluxo de trabalho.txt
+
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git commit -m "fluxo de trabalho"
+[main 31caa82] fluxo de trabalho
+ 2 files changed, 54 insertions(+)
+ create mode 100644 anotado.txt
+ create mode 100644 fluxo de trabalho.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git commit -m "anotado"
+On branch main
+nothing to commit, working tree clean
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ ls
+ anotado.txt   comandos_bash.txt   comandos_git.txt  'fluxo de trabalho.txt'
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git log
+commit 31caa8213d249f4279c05ff27b1f7252b0c80c2d (HEAD -> main)
+Author: 007Will <renome@live.com>
+Date:   Sun Feb 23 00:13:17 2025 -0300
+
+    fluxo de trabalho
+
+commit c754fcd8f899870956427e051e11894e862b1031
+Author: 007Will <renome@live.com>
+Date:   Sat Feb 22 23:54:46 2025 -0300
+
+    novos comandos em git e bash
+
+commit 708c01aedb41fe741e558bf6a422d5634a4abbb9
+Author: 007Will <renome@live.com>
+Date:   Sat Feb 22 23:41:31 2025 -0300
+
+    Novos comandos bash e primeiros comandos git
+
+commit af3213c4ddc06578a96b1d8d12e8b8cc0a96358b
+Author: 007Will <renome@live.com>
+Date:   Sat Feb 22 23:14:01 2025 -0300
+
+    comandos bash
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ v MINGW64 ~
+$ pwd
+/c/Users/DEV
+
+DEV@Dev MINGW64 ~
+$ ls
+ AppData/                                                                                       NetHood@
+'Application Data'@                                                                             OneDrive/
+ Contacts/                                                                                      Pictures/
+ Cookies@                                                                                       PrintHood@
+ Desktop/                                                                                       Recent@
+ Documents/                                                                                    'Saved Games'/
+ Downloads/                                                                                     Searches/
+ Favorites/                                                                                     SendTo@
+ Links/                                                                                        'Start Menu'@
+'Local Settings'@                                                                               Templates@
+ Music/                                                                                         Videos/
+'My Documents'@                                                                                 eclipse-workspace/
+ NTUSER.DAT                                                                                     ntuser.dat.LOG1
+ NTUSER.DAT{3aa29e1e-b204-11ef-9290-00090faa0001}.TM.blf                                        ntuser.dat.LOG2
+ NTUSER.DAT{3aa29e1e-b204-11ef-9290-00090faa0001}.TMContainer00000000000000000001.regtrans-ms   ntuser.ini
+ NTUSER.DAT{3aa29e1e-b204-11ef-9290-00090faa0001}.TMContainer00000000000000000002.regtrans-ms
+
+DEV@Dev MINGW64 ~
+$ cd desktop/
+
+DEV@Dev MINGW64 ~/desktop
+$ mkdir Guit_2025
+
+DEV@Dev MINGW64 ~/desktop
+$ cd Guit_2025
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025
+$ ls
+comandos_bash.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025
+$ cat comandos_bash.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025
+$ cat comandos_bash.txt
+ls -> lista arquivos
+cd -> move entre diretórios
+pwd -> mostra diretório de trabalho
+DEV@Dev MINGW64 ~/desktop/Guit_2025
+$ git init .
+Initialized empty Git repository in C:/Users/DEV/Desktop/Guit_2025/.git/
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ ls
+comandos_bash.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ ls -a
+./  ../  .git/  comandos_bash.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        comandos_bash.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)6358bt(HEAD -> main) trabalho.txt'RLF the next time Git touches it
