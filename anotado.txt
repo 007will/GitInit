@@ -1,0 +1,43 @@
+ls -> lista arquivos
+cd -> move entre diretórios
+pwd -> mostra diretório de trabalho
+
+guit init . -> Cria pasta versionada do guit
+rm -rf .git/ -> Caso precise excluir a pasta
+ls -a -> lista pastas e arquivos oucutos
+git status - > mostra status dos comites
+git add nome_arquivo.extensao -> Adiciona arquivo ao commit
+git commit -m "nome arquivo" -> Adiciona o versionamento dele
+git config --global user.email "renome@live.com"
+git config --global user.name "007Will"
+git commit -m "comandos bash"
+
+$ git commit -m "comandos bash"
+[main (root-commit) af3213c] comandos bash
+ 1 file changed, 3 insertions(+)
+ create mode 100644 comandos_bash.txt
+
+$ ls -a -> lista o conteúdo oculto e dentro de .git
+./  ../  .git/  comandos_bash.txt
+
+cat -> exibe conteúdo do arquivo
+rm -> remove arquivo ou diretório
+
+nano nome_arquivo.extensao -> cria um novo arquivo e abre no editor nano GNU dentro do propt (Para salvar arquivo - Control + O e sair Control + X)
+
+Exemplo: nano comandos_git.txt
+
+git init . > cria um repo git na pasta atual
+git status > mostra o status do trabalho (de cada arquivo)
+git add nome_arquivo > adiciona arquivo para ser commitado
+git commit m "msg" > faz commit do que estava para ser comitado
+
+git log -> mostra todas as alterações feitas e informações gerais
+histórico de todos os commits
+
+rm -rf -> remove de forma recursiva e forçada todos os diretórios
+
+git add * -> adicionar tudo
+git add . -> adicionar tudo da pasta atual .git
+git add comandos_*  -> adicionar tudo começados com o nome
+git add * .txt -> adicionar todos os arquivos txt
