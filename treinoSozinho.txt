@@ -1,0 +1,98 @@
+
+DEV@Dev MINGW64 /
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+DEV@Dev MINGW64 /
+$ ls
+LICENSE.txt        cmd/  git-bash.exe*  proc/         unins000.exe*
+ReleaseNotes.html  dev/  git-cmd.exe*   tmp/          unins000.msg
+bin/               etc/  mingw64/       unins000.dat  usr/
+
+DEV@Dev MINGW64 /
+$ cd
+
+DEV@Dev MINGW64 ~
+$ cd deskto/
+bash: cd: deskto/: No such file or directory
+
+DEV@Dev MINGW64 ~
+$ pwd
+/c/Users/DEV
+
+DEV@Dev MINGW64 ~
+$ cd desktop/
+
+DEV@Dev MINGW64 ~/desktop
+$ ls
+ Guit_2025/   Notepad++.lnk*   desktop.ini  'eclipse - Java.lnk'*
+
+DEV@Dev MINGW64 ~/desktop
+$ ls -a
+ ./   ../   Guit_2025/   Notepad++.lnk*   desktop.ini  'eclipse - Java.lnk'*
+
+DEV@Dev MINGW64 ~/desktop
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+DEV@Dev MINGW64 ~/desktop
+$ cd .git
+bash: cd: .git: No such file or directory
+
+DEV@Dev MINGW64 ~/desktop
+$ cd Guit_2025
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ ls
+ anotado.txt         comandos_git.txt         lista    move
+ comandos_bash.txt  'fluxo de trabalho.txt'   mostra   totalCode.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ ls -a
+ ./      anotado.txt        'fluxo de trabalho.txt'   move
+ ../     comandos_bash.txt   lista                    totalCode.txt
+ .git/   comandos_git.txt    mostra
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        lista
+        mostra
+        move
+        totalCode.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        totalCode.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git add "totalCode"
+fatal: pathspec 'totalCode' did not match any files
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git add "totalCode.txt"
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   totalCode.txt
+
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
+$ git commit -m "totalCode"
+[main f65882c] totalCode
+ 1 file changed, 485 insertions(+)
+ create mode 100644 totalCode.txt
+
+DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)

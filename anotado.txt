@@ -41,3 +41,21 @@ git add * -> adicionar tudo
 git add . -> adicionar tudo da pasta atual .git
 git add comandos_*  -> adicionar tudo começados com o nome
 git add * .txt -> adicionar todos os arquivos txt
+
+extras
+
+ git init .
+ -> Cria novo repositório git
+git status
+ -> Mostra o status da branch atual
+git add <nome arquivo>
+ -> Manda arquivo para stage
+git commit -m "minha mensagem"
+ -> Consolida o checkpoint "commit"
+git log
+ -> Exibe histórico de commits
+git reset
+ -> Retorna para unstage
+git reset idCommit                           
+ -> Retorna para pos-commit
+
