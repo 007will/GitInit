@@ -161,7 +161,7 @@ DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
 $ ^C
 
 DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
-$ git config --global user.email "renome@live.com"
+$ git config --global user.email "Mail"
 
 DEV@Dev MINGW64 ~/desktop/Guit_2025 (main)
 $ git config --global user.name "007Will"

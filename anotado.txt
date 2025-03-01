@@ -8,7 +8,7 @@ ls -a -> lista pastas e arquivos oucutos
 git status - > mostra status dos comites
 git add nome_arquivo.extensao -> Adiciona arquivo ao commit
 git commit -m "nome arquivo" -> Adiciona o versionamento dele
-git config --global user.email "renome@live.com"
+git config --global user.email "mail"
 git config --global user.name "007Will"
 git commit -m "comandos bash"
 
