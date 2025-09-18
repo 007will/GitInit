@@ -1,0 +1,15 @@
+rm -rf azure_d/.git
+rm -rf directory_automation/.git
+rm -rf pj/.git
+rm -rf folder_automation/.git
+
+git add .
+git commit -m "Adicionando projetos sem .git"
+git push
+
+git rm --cached -r azure_d directory_automation pj folder_automation
+
+git submodule add <url-do-repo> azure_d
+git submodule add <url-do-repo> directory_automation
+git submodule add <url-do-repo> pj
+git submodule add <url-do-repo> folder_automation
